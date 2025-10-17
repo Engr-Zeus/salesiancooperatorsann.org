@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Members - ASC ANN Province</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Salesian Cooperators ANN members directory" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>No 1 Don Bosco Avenue, Kubwa Ext. III Abuja FCT.</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@salesiancooperatorsann.org</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="d-flex justify-content-between w-100">
+                <a href="index.html" class="navbar-brand ms-4 ms-lg-0 d-flex align-items-center">
+                    <img src="img/brandImage.svg" alt="Logo" class="img-fluid d-inline me-1" style="width: 8%;">
+                    <h1 class="fw-bold text-primary" style="line-height: 1.1;">
+                        ASC <span class="text-white">ANN Province</span>
+                    </h1>
+                </a>
+                <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0 d-flex align-items-center flex-nowrap gap-2 gap-lg-3" style="font-size: 0.95rem;">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html#about" class="nav-item nav-link">About</a>
+                    <a href="projects.html" class="nav-item nav-link text-nowrap">Local Centers</a>
+                    <a href="service.html" class="nav-item nav-link">Programs</a>
+                    <a href="members.html" class="nav-item nav-link active">Members</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Members Directory</h1>
+            <nav aria-label="breadcrumb" class="animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Members</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Members Directory Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Province Members</div>
+                <h2 class="mb-3">Search, filter, and browse all registered members</h2>
+                <p class="text-muted mb-0">Use the search box and filters to quickly find members by name, local center, or role.</p>
+            </div>
+
+            <div class="bg-white border rounded-3 p-3 p-md-4 shadow-sm mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-3 align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-search"></i></span>
+                            <input id="members-search" type="text" class="form-control" placeholder="Search by surname, first name, email...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <select id="filter-center" class="form-select">
+                            <option value="">All Centers</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <select id="filter-role" class="form-select">
+                            <option value="">All Roles</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <small id="members-status" class="text-muted"></small>
+                </div>
+            </div>
+
+            <div class="table-responsive wow fadeInUp" data-wow-delay="0.1s">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th role="button" data-key="surname" class="text-nowrap">Surname <i class="bi bi-arrow-down-up ms-1"></i></th>
+                            <th role="button" data-key="firstName" class="text-nowrap">First Name <i class="bi bi-arrow-down-up ms-1"></i></th>
+                            <th class="text-nowrap">Email</th>
+                            <th role="button" data-key="center" class="text-nowrap">Local Center <i class="bi bi-arrow-down-up ms-1"></i></th>
+                            <th role="button" data-key="role" class="text-nowrap">Role <i class="bi bi-arrow-down-up ms-1"></i></th>
+                            <th role="button" data-key="firstPromise" class="text-nowrap">Date of 1st Promise <i class="bi bi-arrow-down-up ms-1"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="members-tbody">
+                        <!-- rows populated by script -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <small id="results-count" class="text-muted"></small>
+                <nav aria-label="Members pagination">
+                    <ul class="pagination pagination-sm mb-0" id="members-pagination">
+                        <!-- pagination populated by script -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Members Directory End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">ASC<span class="text-white">ANN</span></h1>
+                    <p>Changing Africa by Empowering Africans </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>No 1 Don Bosco Avenue, Kubwa Ext. III Abuja FCT </p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+2347038556687</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@salesiancooperatorsann.org</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="index.html#about">About Us</a>
+                    <a class="btn btn-link" href="projects.html">Local Centers</a>
+                    <a class="btn btn-link" href="service.html">Programs</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="donate.html">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Salesian Newsletter</h5>
+                    <p>Sign up for the Monthly Salesian Newsletter.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Salesian Cooperators Kubwa</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a href="#">Zeus Technologies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Members Page Script -->
+    <script>
+        // Configure your GitHub data source (CSV or XLSX)
+        // Expected headers (row 1): Surname | First Name | Email Address | Local Center | Designation | Date of 1st Promise
+        // Optional GitHub sources (set one of these):
+        // Raw CSV URL example: https://raw.githubusercontent.com/<user>/<repo>/<branch>/<path>/members.csv
+        // Raw XLSX URL example: https://raw.githubusercontent.com/<user>/<repo>/<branch>/<path>/members.xlsx
+        const GITHUB_CSV_URL = "";
+        const GITHUB_XLSX_URL = "";
+        const XLSX_SHEET_NAME = ""; // optional: worksheet name, else first sheet
+
+        let membersData = [];
+
+        const state = {
+            search: "",
+            center: "",
+            role: "",
+            sortKey: "surname",
+            sortDir: "asc", // 'asc' or 'desc'
+            page: 1,
+            pageSize: 10
+        };
+
+        const $tbody = document.getElementById('members-tbody');
+        const $search = document.getElementById('members-search');
+        const $filterCenter = document.getElementById('filter-center');
+        const $filterRole = document.getElementById('filter-role');
+        const $resultsCount = document.getElementById('results-count');
+        const $pagination = document.getElementById('members-pagination');
+        const $tableBodyContainer = document.getElementById('members-tbody');
+        const $status = document.getElementById('members-status');
+
+        function uniqueSorted(values) {
+            return Array.from(new Set(values)).sort((a, b) => String(a).localeCompare(String(b)));
+        }
+
+        function populateFilters() {
+            const centers = uniqueSorted(membersData.map(m => m.center).filter(Boolean));
+            const roles = uniqueSorted(membersData.map(m => m.role).filter(Boolean));
+
+            centers.forEach(center => {
+                const opt = document.createElement('option');
+                opt.value = center;
+                opt.textContent = center;
+                $filterCenter.appendChild(opt);
+            });
+
+            roles.forEach(role => {
+                const opt = document.createElement('option');
+                opt.value = role;
+                opt.textContent = role;
+                $filterRole.appendChild(opt);
+            });
+        }
+
+        function applyFilters(data) {
+            return data.filter(m => {
+                const matchesSearch = state.search === "" ||
+                    [m.surname, m.firstName, m.email, m.center, m.role]
+                        .join(" ")
+                        .toLowerCase()
+                        .includes(state.search.toLowerCase());
+
+                const matchesCenter = state.center === "" || m.center === state.center;
+                const matchesRole = state.role === "" || m.role === state.role;
+                return matchesSearch && matchesCenter && matchesRole;
+            });
+        }
+
+        function sortData(data) {
+            const { sortKey, sortDir } = state;
+            const sorted = [...data].sort((a, b) => {
+                if (sortKey === 'firstPromise') {
+                    return (new Date(a.firstPromise)) - (new Date(b.firstPromise));
+                }
+                return String(a[sortKey]).localeCompare(String(b[sortKey]));
+            });
+            if (sortDir === 'desc') sorted.reverse();
+            return sorted;
+        }
+
+        function paginate(data) {
+            const start = (state.page - 1) * state.pageSize;
+            const end = start + state.pageSize;
+            return data.slice(start, end);
+        }
+
+        function renderTableRows(rows) {
+            $tbody.innerHTML = rows.map(m => `
+                <tr>
+                    <td class="fw-500">${m.surname}</td>
+                    <td>${m.firstName}</td>
+                    <td><a href=\"mailto:${m.email}\">${m.email}</a></td>
+                    <td>${m.center}</td>
+                    <td>${m.role}</td>
+                    <td>${m.firstPromise ? new Date(m.firstPromise).toLocaleDateString() : ''}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderPagination(total) {
+            const totalPages = Math.max(1, Math.ceil(total / state.pageSize));
+            state.page = Math.min(state.page, totalPages);
+            const pages = [];
+            for (let p = 1; p <= totalPages; p++) {
+                pages.push(`<li class="page-item ${p === state.page ? 'active' : ''}"><a class="page-link" href="#" data-page="${p}">${p}</a></li>`);
+            }
+            $pagination.innerHTML = pages.join('');
+
+            $pagination.querySelectorAll('a[data-page]').forEach(a => {
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    state.page = parseInt(a.getAttribute('data-page'));
+                    update();
+                });
+            });
+        }
+
+        function update() {
+            const filtered = applyFilters(membersData);
+            const sorted = sortData(filtered);
+            const pageRows = paginate(sorted);
+
+            renderTableRows(pageRows);
+            renderPagination(filtered.length);
+            $resultsCount.textContent = `${filtered.length} member${filtered.length === 1 ? '' : 's'} found`;
+        }
+
+        function setupSorting() {
+            document.querySelectorAll('th[data-key]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.getAttribute('data-key');
+                    if (state.sortKey === key) {
+                        state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        state.sortKey = key;
+                        state.sortDir = 'asc';
+                    }
+                    update();
+                });
+            });
+        }
+
+        function setupControls() {
+            $search.addEventListener('input', () => {
+                state.search = $search.value.trim();
+                state.page = 1;
+                update();
+            });
+            $filterCenter.addEventListener('change', () => {
+                state.center = $filterCenter.value;
+                state.page = 1;
+                update();
+            });
+            $filterRole.addEventListener('change', () => {
+                state.role = $filterRole.value;
+                state.page = 1;
+                update();
+            });
+        }
+
+        // Google Sheets loader removed
+
+        function loadScriptOnce(src) {
+            return new Promise((resolve, reject) => {
+                if (document.querySelector(`script[src="${src}"]`)) return resolve();
+                const s = document.createElement('script');
+                s.src = src;
+                s.async = true;
+                s.onload = () => resolve();
+                s.onerror = () => reject(new Error(`Failed to load script ${src}`));
+                document.head.appendChild(s);
+            });
+        }
+
+        function parseCSV(text) {
+            const lines = text.split(/\r?\n/).filter(l => l.length > 0);
+            if (!lines.length) return { headers: [], rows: [] };
+            const parseLine = (line) => {
+                const result = [];
+                let current = '';
+                let inQuotes = false;
+                for (let i = 0; i < line.length; i++) {
+                    const ch = line[i];
+                    if (ch === '"') {
+                        if (inQuotes && line[i + 1] === '"') { current += '"'; i++; }
+                        else { inQuotes = !inQuotes; }
+                    } else if (ch === ',' && !inQuotes) {
+                        result.push(current);
+                        current = '';
+                    } else {
+                        current += ch;
+                    }
+                }
+                result.push(current);
+                return result;
+            };
+            const headers = parseLine(lines[0]).map(h => h.trim());
+            const rows = lines.slice(1).map(l => parseLine(l));
+            return { headers, rows };
+        }
+
+        // Google Sheets loading removed
+
+        async function loadMembersFromGitHub() {
+            if (GITHUB_CSV_URL) {
+                const resp = await fetch(GITHUB_CSV_URL, { cache: 'no-store' });
+                if (!resp.ok) throw new Error(`CSV HTTP ${resp.status}`);
+                const csvText = await resp.text();
+                const { headers, rows } = parseCSV(csvText);
+                const lower = headers.map(h => h.trim().toLowerCase());
+                const idx = {
+                    surname: lower.indexOf('surname'),
+                    firstName: lower.indexOf('first name'),
+                    email: lower.indexOf('email address'),
+                    center: lower.indexOf('local center'),
+                    role: lower.indexOf('designation'),
+                    firstPromise: lower.indexOf('date of 1st promise')
+                };
+                const reqMiss = Object.entries(idx)
+                    .filter(([k,i]) => ['surname','firstName','email','center','role'].includes(k) && i === -1)
+                    .map(([k]) => k);
+                if (reqMiss.length) throw new Error(`CSV missing headers: ${reqMiss.join(', ')}`);
+                membersData = rows.map(arr => ({
+                    surname: idx.surname >= 0 ? arr[idx.surname] : '',
+                    firstName: idx.firstName >= 0 ? arr[idx.firstName] : '',
+                    email: idx.email >= 0 ? arr[idx.email] : '',
+                    center: idx.center >= 0 ? arr[idx.center] : '',
+                    role: idx.role >= 0 ? arr[idx.role] : '',
+                    firstPromise: idx.firstPromise >= 0 && arr[idx.firstPromise] ? new Date(arr[idx.firstPromise]).toISOString().slice(0,10) : ''
+                })).filter(m => m.surname || m.firstName);
+                $status && ($status.textContent = `${membersData.length} members loaded (GitHub CSV).`);
+                populateFilters();
+                update();
+                return;
+            }
+            if (GITHUB_XLSX_URL) {
+                await loadScriptOnce('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js');
+                const resp = await fetch(GITHUB_XLSX_URL, { cache: 'no-store' });
+                if (!resp.ok) throw new Error(`XLSX HTTP ${resp.status}`);
+                const arrayBuf = await resp.arrayBuffer();
+                const workbook = XLSX.read(arrayBuf, { type: 'array' });
+                const sheetName = XLSX_SHEET_NAME || workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                if (!worksheet) throw new Error(`Worksheet not found: ${sheetName}`);
+                const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+                if (!json.length) throw new Error('XLSX sheet empty');
+                const headers = json[0].map(h => String(h || '').trim());
+                const lower = headers.map(h => h.toLowerCase());
+                const idx = {
+                    surname: lower.indexOf('surname'),
+                    firstName: lower.indexOf('first name'),
+                    email: lower.indexOf('email address'),
+                    center: lower.indexOf('local center'),
+                    role: lower.indexOf('designation'),
+                    firstPromise: lower.indexOf('date of 1st promise')
+                };
+                const reqMiss = Object.entries(idx)
+                    .filter(([k,i]) => ['surname','firstName','email','center','role'].includes(k) && i === -1)
+                    .map(([k]) => k);
+                if (reqMiss.length) throw new Error(`XLSX missing headers: ${reqMiss.join(', ')}`);
+                const dataRows = json.slice(1);
+                membersData = dataRows.map(arr => ({
+                    surname: idx.surname >= 0 ? arr[idx.surname] : '',
+                    firstName: idx.firstName >= 0 ? arr[idx.firstName] : '',
+                    email: idx.email >= 0 ? arr[idx.email] : '',
+                    center: idx.center >= 0 ? arr[idx.center] : '',
+                    role: idx.role >= 0 ? arr[idx.role] : '',
+                    firstPromise: idx.firstPromise >= 0 && arr[idx.firstPromise] ? new Date(arr[idx.firstPromise]).toISOString().slice(0,10) : ''
+                })).filter(m => m.surname || m.firstName);
+                $status && ($status.textContent = `${membersData.length} members loaded (GitHub XLSX).`);
+                populateFilters();
+                update();
+                return;
+            }
+            throw new Error('No GitHub source configured');
+        }
+
+        document.addEventListener('DOMContentLoaded', async function () {
+            setupSorting();
+            setupControls();
+            try {
+                if (GITHUB_CSV_URL || GITHUB_XLSX_URL) {
+                    $status && ($status.textContent = 'Loading members from GitHub...');
+                    await loadMembersFromGitHub();
+                } else {
+                    $status && ($status.textContent = 'No data source configured. Set GITHUB_CSV_URL or GITHUB_XLSX_URL.');
+                }
+            } catch (e) {
+                console.error(e);
+                $status && ($status.textContent = 'Failed to load members from GitHub.');
+            }
+            if (!membersData.length) populateFilters();
+            update();
+        });
+    </script>
+</body>
+
+</html>
+
